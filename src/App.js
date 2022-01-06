@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import PostEntry from "./Components/PostEntry/PostEntry";
 import PostDisplay from "./Components/PostDisplay/PostDisplay";
+/* import LikeDislike from "./Components/LikeDislike/LikeDislike"; */
 
 function App() {
 
-  const [entries, setEntries] = useState([{ name: " ", post: " " }])
+  const [entries, setEntries] = useState([])
 
   function addNewPost(entry) {
     let tempEntries = [entry, ...entries];
