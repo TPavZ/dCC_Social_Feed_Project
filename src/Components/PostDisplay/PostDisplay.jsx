@@ -3,7 +3,7 @@ const PostDisplay = (props) => {
         props.parentPosts.map((entry) => {
             return (
                 <div>
-                    <h1>{entry.name}</h1>
+                    <h4>{entry.name}</h4>
                     <p>{entry.post}</p>
                 </div>
             )

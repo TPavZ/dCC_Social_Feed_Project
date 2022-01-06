@@ -4,7 +4,7 @@ import PostDisplay from "./Components/PostDisplay/PostDisplay";
 
 function App() {
 
-  const [entries, setEntries] = useState([/* { name: "TEST text", post: "TEST text" } */])
+  const [entries, setEntries] = useState([{ name: " ", post: " " }])
 
   function addNewPost(entry) {
     let tempEntries = [entry, ...entries];
@@ -14,6 +14,7 @@ function App() {
   return (
     <div>
       <h1>Stuff No One Cares About</h1>
+      <i class="bi bi-hand-thumbs-up"></i>
       <PostEntry addNewPost={addNewPost} />
       <PostDisplay parentPosts={entries} />
     </div>
