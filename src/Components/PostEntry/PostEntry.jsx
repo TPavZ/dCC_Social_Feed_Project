@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './PostEntry.css';
 
 const PostEntry = (props) => {
     const [name, setName] = useState("");
@@ -16,14 +17,16 @@ const PostEntry = (props) => {
     return (
         <form onSubmit={handleSubmit} className='form-grid'>
             <div className="form-group">
-                <label>Name</label>
+                <label>My Name Is...</label>
                 <input type='text' className="form-control" value={name} onChange={(event) => setName(event.target.value)} />
             </div>
             <div className="form-group">
-                <label>Post</label>
+                <label>What You Got To Say?</label>
                 <input type='text' className="form-control" value={post} onChange={(event) => setPost(event.target.value)} />
+                <div className="sub-button">
+                    <button type='submit' className="btn btn-outline-dark" style={{ 'marginTop': '1em' }}><strong>Posty!</strong></button>
+                </div>
             </div>
-            <button type='submit' className="btn btn-primary" style={{ 'marginTop': '1em' }}>Submit Dat Shit</button>
         </form>
     );
 }

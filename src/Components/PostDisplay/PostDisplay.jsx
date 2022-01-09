@@ -1,4 +1,6 @@
-import LikeDislike from "../LikeDislike/LikeDislike";
+import LikeDislikeButton from "../LikeDislikeButton/LikeDislikeButton";
+
+
 
 const PostDisplay = (props) => {
     return (
@@ -7,9 +9,7 @@ const PostDisplay = (props) => {
                 <div>
                     <h4>{entry.name}</h4>
                     <p>{entry.post}</p>
-                    <div>
-                        <LikeDislike />
-                    </div>
+                    <LikeDislikeButton />
                 </div>
             )
         }));

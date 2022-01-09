@@ -1,0 +1,23 @@
+h1 strong {
+    color: rgb(29, 161, 243);    
+}
+h1 {
+    color: rgb(17, 88, 132);    
+}
+
+.post-box {
+    margin-top: 2em;
+    padding: 1em;
+}
+
+.title {
+    background-color: skyblue;
+}
+
+html {
+    background-color: rgb(98, 0, 255);
+}
+
+.container-fluid {
+    background-color: springgreen;
+}
