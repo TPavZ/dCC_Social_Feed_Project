@@ -5,7 +5,7 @@ import './App.css'
 
 function App() {
 
-  const [entries, setEntries] = useState([])
+  const [entries, setEntries] = useState([{name: "Tyler Pavlic", post: "What's up everyone, Welcome to Tytter version 0.001!"}])
 
   function addNewPost(entry) {
     let tempEntries = [entry, ...entries];
@@ -26,7 +26,7 @@ function App() {
           <br />
           <div className="post-box">
             <div className="post-title">
-              <h2><u>Feed Us!</u></h2>
+              <h2><u>Feed Us With Thoughts!</u></h2>
             </div>
             <PostDisplay parentPosts={entries} />
           </div>

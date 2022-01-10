@@ -5,19 +5,29 @@ h1 {
     color: rgb(17, 88, 132);    
 }
 
+
 .post-box {
     margin-top: 2em;
     padding: 1em;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    padding: 1em;
+    box-shadow: 5px 10px #888888;
+    border-radius: 5%;
 }
-
 .title {
-    background-color: skyblue;
+    background-color: rgb(255, 255, 255);
 }
 
 html {
-    background-color: rgb(98, 0, 255);
+    background-color: rgb(255, 255, 255) !important;
 }
 
 .container-fluid {
-    background-color: springgreen;
+    background-color: rgb(255, 255, 255);
+}
+
+div {
+    margin: 1em;
 }

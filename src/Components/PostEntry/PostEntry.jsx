@@ -19,13 +19,9 @@ const PostEntry = (props) => {
             <div className="form-group">
                 <label>My Name Is...</label>
                 <input type='text' className="form-control" value={name} onChange={(event) => setName(event.target.value)} />
-            </div>
-            <div className="form-group">
                 <label>What You Got To Say?</label>
                 <input type='text' className="form-control" value={post} onChange={(event) => setPost(event.target.value)} />
-                <div className="sub-button">
-                    <button type='submit' className="btn btn-outline-dark" style={{ 'marginTop': '1em' }}><strong>Posty!</strong></button>
-                </div>
+                <button type='submit' className="btn btn-outline-dark" style={{ 'marginTop': '1em' }}><strong>Posty!</strong></button>
             </div>
         </form>
     );
